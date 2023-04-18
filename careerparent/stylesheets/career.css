@@ -1,0 +1,144 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.529);
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+  }
+
+body{
+    position: relative;
+    width:100%; ;
+    height:150%;
+}
+nav{
+    height: 5.3rem;
+    width: 100%;
+    background-color: #ffffff7a;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
+    display: flex !important;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+
+/*Styling logo*/
+.logo{
+    width: 53vw;
+    padding:1vh 1vw;
+    margin-left: 2vw;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.logo img {
+    height: 5rem;
+    width: 9rem;
+}
+.logo h2>a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #2510bf;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.logo h2>a>i{
+    color: #2510bf;
+    margin-left: -5px;
+}
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 41vw;
+    padding: 0 0.8vw;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.nav-links li a{
+    color: #131418;
+    text-decoration: none;
+    margin: 0 0.7vw;
+    font-weight: 600;
+}
+.nav-links li a:hover {
+    color: #FA1617;
+}
+.nav-links li {
+    position: relative;
+    margin: 1vw;;
+}
+/*Styling Buttons*/
+.login-button {
+    padding: 5px 15px;
+    font-size: 17PX;
+    font-weight: 600;
+    font-family: "gilroy";
+    background-color: transparent;
+    border-radius: 25px;
+    border: none; 
+    background-color:rgba(198, 196, 196, 0.5);
+    color:black;
+    cursor: pointer;
+   } 
+   
+   .login-button a  :hover{
+     color: rgb(186, 31, 31);
+}
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #000000;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+
+/*Stying for small screens*/
+
+
+.header-text {
+    width: 45vmax;
+    height: 8vmax;
+    position: absolute;
+    top: 19vmin;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .header-text h1 {
+    font-size: 39px;
+    font-weight: 800;
+    color: #131418;
+  }
+  
+  .header-text p {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+}

@@ -1,0 +1,753 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    min-height: 100vh;
+}
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.529);
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+  }
+
+.invoice{
+     width:100%;
+     height: 100vh;
+    border-left: .1px solid white;
+    background-color: #1a5772;
+    position: fixed;
+    top: 0;
+    display: none;
+    
+}
+.preInvoice_desc{
+    width: 40%;
+    height: 95vh;
+    background-color: #fff;
+    overflow: auto;
+    margin-left: 30vw;
+    margin-top: 2vh;
+display: none;
+flex-direction: column;
+}
+.mainInvoice_desc {
+    width: 40%;
+    height: 95vh;
+    background-color: #fff;
+    overflow: auto;
+    margin-left: 30vw;
+    margin-top: 2vh;
+display: none;
+flex-direction: column;
+}
+
+.preInvoice_desc .cross4{
+   font-size: 1vw;
+   margin-left: 37vw;
+   margin-top: 1vh;
+   cursor: pointer;
+}
+.top{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.pre_invoice,.main_invoice{
+    width: 100%; 
+    height: 6vh; 
+    padding-top: 1vh;
+    text-align: center;
+}
+.pre_invoice h3 {
+    font-size: 2.2vW;
+    margin-bottom : 3vh;
+}
+.main_invoice h3{
+    font-size: 4vh;
+}
+.top{
+    margin-top: 3vh;
+}
+.top1{
+    padding: .5vw;
+    width: 10vw;
+
+}
+
+.top2{
+    padding: .5vw;
+    width:10vw;
+    display: flex;
+}
+
+.top1 h1{
+font-size: 2vh;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.top2 p{
+    font-size: 1.8vh;
+}
+.top2 h3{
+    font-size: 1.8vh;
+    margin-left: 1vw;
+}
+.middle{
+    width: 100%;
+    height:20vh;
+    padding: .5vw;
+    border-bottom: .1px solid black;
+}
+.middle h1{
+    font-size: 1.5vw;
+}
+.middle h2{
+    margin-top: 1vh;
+    font-size: 1.1vw;
+}
+.middle h3{
+    margin-top: 1vh;
+    font-size: .9vw;
+}
+.middle p{
+    margin-top: 1vh;
+    font-size: .8vw;
+}
+.desc{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    padding: .5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc1 h1,.desc2 h1,.desc3 h1,.desc4 h1{
+    font-size: 2.5vh;
+    margin-bottom: 1vh;
+}
+
+.parts{
+    width: 100%;
+    height: 45vh;
+    flex-direction: column;
+}
+.parts-description {
+    padding: .5vw;
+}
+.parts-description h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5vw;
+  margin-bottom: 1vh;
+}
+
+.parts-required{
+    display: flex;
+    padding: .5vw;
+}
+.costs ,.taxes{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5vw;
+}
+.costs h1,.taxes h1,.costs h2,.taxes h2,.costs h3,.taxes h3{
+    font-size: 1vw;
+}
+.costs p ,.taxes p{
+    font-size: 1.5vw;
+    margin-top: 1vh;
+}
+.last{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5vw;
+}
+.last button{
+    padding: .8vh 1.5vw;
+    border-radius: 1.5vw;
+    background-color: #1a5772;
+    color: #fff;
+    border: none;
+}
+.last img{
+    height: 4vw;
+    margin-left: 2vw;
+}
+.last input{
+    width: 12vw;
+    padding: .5vw;
+}
+
+@media  (max-width: 480px) { 
+
+    .invoice{
+        width:100%;
+        height: 100vh;
+       border-left: .1px solid white;
+       background-color: #1a5772;
+       position: fixed;
+       top: 0;
+       display: none;
+       
+   }
+
+   .preInvoice_desc{
+    width: 90%;
+    height: 95vh;
+    background-color: #fff;
+    overflow: auto;
+    margin-left: 5vw;
+    margin-top: 2vh;
+display: none;
+flex-direction: column;
+}
+.mainInvoice_desc {
+    width: 90%;
+    height: 95vh;
+    background-color: #fff;
+    overflow: auto;
+    margin-left: 5vw;
+    margin-top: 2vh;
+display: none;
+flex-direction: column;
+}
+.preInvoice_desc .cross4{
+    font-size: 4vw;
+    margin-left: 80vw;
+    margin-top: 1vh;
+    cursor: pointer;
+ }
+ .top{
+     width: 100%;
+     height: 5vh;
+     display: flex;
+     justify-content: space-between;
+ }
+ .pre_invoice,.main_invoice{
+    width: 100%; 
+    height: 6vh; 
+    padding-top: 1vh;
+    text-align: center;
+}
+.pre_invoice h3 {
+    font-size: 8vW;
+    margin-bottom : 3vh;
+}
+
+.main_invoice h3{
+    font-size: 4vh;
+}
+.top{
+    margin-top: 1vh;
+}
+.top1{
+    padding: .5vw;
+    width: 50vw;
+}
+
+.top2{
+    padding: .5vw;
+    width:50vw;
+    display: flex;
+}
+
+.top1 h1{
+font-size: 1.5vh;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.top2 p{
+    font-size: 1.8vh;
+}
+.top2 h3{
+    font-size: 1.8vh;
+    margin-left: 1vw;
+}
+.middle{
+    width: 100%;
+    height:20vh;
+    padding: .5vw;
+    border-bottom: .1px solid black;
+}
+.middle h1{
+    font-size: 5.5vw;
+}
+.middle h2{
+    margin-top: 1vh;
+    font-size: 4.5vw;
+}
+.middle h3{
+    margin-top: 1vh;
+    font-size: 4vw;
+}
+.middle p{
+    margin-top: 3vh;
+    font-size: 3.5vw;
+}
+.desc{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    padding: .5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.desc1 h1,.desc2 h1,.desc3 h1,.desc4 h1{
+    font-size: 2.5vh;
+    margin-bottom: 5vh;
+}
+
+.parts{
+    width: 100%;
+    height: 45vh;
+    flex-direction: column;
+}
+.parts-description {
+    padding: .5vw;
+}
+.parts-description h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 5.5vw;
+  margin-bottom: 1vh;
+}
+
+.parts-required{
+    display: flex;
+    padding: .5vw;
+}
+.costs ,.taxes{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5vw;
+}
+.costs h1,.taxes h1,.costs h2,.taxes h2,.costs h3,.taxes h3{
+    font-size: 4vw;
+}
+.costs p ,.taxes p{
+    font-size: 4.5vw;
+    margin-top: 1vh;
+}
+.last{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: .5vw;
+}
+.last button{
+    padding: .8vh 1.5vw;
+    border-radius: 1.5vw;
+    background-color: #1a5772;
+    color: #fff;
+    border: none;
+}
+.last img{
+    height: 10vw;
+    margin-left: 2vw;
+}
+.last input{
+    width: 25vw;
+    padding: .5vw;
+}
+
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .invoice{
+        width:100%;
+        height: 100vh;
+       border-left: .1px solid white;
+       background-color: #1a5772;
+       position: fixed;
+       top: 0;
+       display: none;
+       
+   }
+
+   .preInvoice_desc{
+    width: 85%;
+    height: 95vh;
+    background-color: #fff;
+    overflow: auto;
+    margin-left: 8vw;
+    margin-top: 2vh;
+display: none;
+flex-direction: column;
+}
+.mainInvoice_desc {
+    width: 85%;
+    height: 95vh;
+    background-color: #fff;
+    overflow: auto;
+    margin-left: 8vw;
+    margin-top: 2vh;
+display: none;
+flex-direction: column;
+}
+.preInvoice_desc .cross4{
+    font-size: 2vw;
+    margin-left: 78vw;
+    margin-top: 1vh;
+    cursor: pointer;
+ }
+ .top{
+     width: 100%;
+     height: 5vh;
+     display: flex;
+     justify-content: space-between;
+ }
+ .pre_invoice,.main_invoice{
+    width: 100%; 
+    height: 6vh; 
+    padding-top: 1vh;
+    text-align: center;
+}
+.pre_invoice h3 {
+    font-size: 5vw;
+    margin-bottom : 3vh;
+}
+
+.main_invoice h3{
+    font-size: 5vw;
+}
+.top{
+    margin-top: 1vh;
+}
+.top1{
+    padding: .5vw;
+    width: 50vw;
+}
+
+.top2{
+    padding: .5vw;
+    width:50vw;
+    display: flex;
+}
+
+.top1 h1{
+font-size: 2.5vw;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.top2 p{
+    font-size: 2.2vw;
+}
+.top2 h3{
+    font-size: 2.2vw;
+    margin-left: 1vw;
+}
+.middle{
+    width: 100%;
+    height:20vh;
+    padding: .5vw;
+    border-bottom: .1px solid black;
+}
+.middle h1{
+    font-size: 4vw;
+}
+.middle h2{
+    margin-top: 1vh;
+    font-size: 3.5vw;
+}
+.middle h3{
+    margin-top: 1vh;
+    font-size: 3vw;
+}
+.middle p{
+    margin-top: 3vh;
+    font-size: 2.5vw;
+}
+.desc{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    padding: .5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.desc1 h1,.desc2 h1,.desc3 h1,.desc4 h1{
+    font-size: 2.5vh;
+    margin-bottom: 5vh;
+}
+
+.parts{
+    width: 100%;
+    height: 45vh;
+    flex-direction: column;
+}
+.parts-description {
+    padding: .5vw;
+}
+.parts-description h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.5vw;
+  margin-bottom: 1vh;
+}
+
+.parts-required{
+    display: flex;
+    padding: .5vw;
+}
+.costs ,.taxes{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5vw;
+}
+.costs h1,.taxes h1,.costs h2,.taxes h2,.costs h3,.taxes h3{
+    font-size: 3vw;
+}
+.costs p ,.taxes p{
+    font-size: 2.5vw;
+    margin-top: 1vh;
+}
+.last{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: .5vw;
+}
+.last button{
+    padding: .8vh 1.5vw;
+    border-radius: 1.5vw;
+    background-color: #1a5772;
+    color: #fff;
+    border: none;
+}
+.last img{
+    height: 6vw;
+    margin-left: 2vw;
+}
+.last input{
+    width: 20vw;
+    padding: .5vw;
+}
+
+
+
+
+ }
+
+ @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { 
+    .invoice{
+        width:100%;
+        height: 100vh;
+       border-left: .1px solid white;
+       background-color: #1a5772;
+       position: fixed;
+       top: 0;
+       display: none;
+       
+   }
+
+   .preInvoice_desc{
+    width: 50%;
+    height: 95vh;
+    background-color: #fff;
+    overflow: auto;
+    margin-left: 25vw;
+    margin-top: 2vh;
+display: none;
+flex-direction: column;
+}
+.mainInvoice_desc {
+    width: 50%;
+    height: 95vh;
+    background-color: #fff;
+    overflow: auto;
+    margin-left: 25vw;
+    margin-top: 2vh;
+display: none;
+flex-direction: column;
+}
+.preInvoice_desc .cross4{
+    font-size: 2vw;
+    margin-left: 45vw;
+    margin-top: 1vh;
+    cursor: pointer;
+ }
+ .top{
+     width: 100%;
+     height: 5vh;
+     display: flex;
+     justify-content: space-between;
+ }
+ .pre_invoice,.main_invoice{
+    width: 100%; 
+    height: 6vh; 
+    padding-top: 1vh;
+    text-align: center;
+}
+.pre_invoice h3 {
+    font-size: 3vw;
+    margin-bottom : 3vh;
+}
+
+.main_invoice h3{
+    font-size: 3vw;
+}
+.top{
+    margin-top: 1vh;
+}
+.top1{
+    padding: .5vw;
+    width: 50vw;
+}
+
+.top2{
+    padding: .5vw;
+    width:50vw;
+    display: flex;
+}
+
+.top1 h1{
+font-size: 1.5vw;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.top2 p{
+    font-size: 1.2vw;
+}
+.top2 h3{
+    font-size: 1.2vw;
+    margin-left: 1vw;
+}
+.middle{
+    width: 100%;
+    height:20vh;
+    padding: .5vw;
+    border-bottom: .1px solid black;
+}
+.middle h1{
+    font-size: 2.5vw;
+}
+.middle h2{
+    margin-top: 1vh;
+    font-size: 4vw;
+}
+.middle h3{
+    margin-top: 1vh;
+    font-size: 3.5vw;
+}
+.middle p{
+    margin-top: 3vh;
+    font-size: 3vw;
+}
+.desc{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    padding: .5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.desc1 h1,.desc2 h1,.desc3 h1,.desc4 h1{
+    font-size: 2.5vh;
+    margin-bottom: 5vh;
+}
+
+.parts{
+    width: 100%;
+    height: 45vh;
+    flex-direction: column;
+}
+.parts-description {
+    padding: .5vw;
+}
+.parts-description h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5vw;
+  margin-bottom: 1vh;
+}
+
+.parts-required{
+    display: flex;
+    padding: .5vw;
+}
+.costs ,.taxes{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5vw;
+}
+.costs h1,.taxes h1,.costs h2,.taxes h2,.costs h3,.taxes h3{
+    font-size: 2vw;
+}
+.costs p ,.taxes p{
+    font-size: 2.5vw;
+    margin-top: 1vh;
+}
+.last{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: .5vw;
+}
+.last button{
+    padding: .8vh 1.5vw;
+    border-radius: 1.5vw;
+    background-color: #1a5772;
+    color: #fff;
+    border: none;
+}
+.last img{
+    height: 6vw;
+    margin-left: 2vw;
+}
+.last input{
+    width: 15vw;
+    padding: .5vw;
+}
+
+
+ }

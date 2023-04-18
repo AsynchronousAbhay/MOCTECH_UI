@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.main {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgb(38, 38, 95);
+}
+
+.header {
+    min-height: 10vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8vmax 1.8vmax;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.header-btn button {
+    padding: 0.7vmax 1.7vmax;
+    border: none;
+    font-size: 0.9vmax;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.section {
+    display: flex;
+    min-height: 90vh;
+    width: 100vw;
+}
+
+.dashboard {
+    min-height: 100%;
+    width: 25%;
+    overflow: hidden;
+    border-right: 1px solid white;
+    padding: 2vmax 0;
+}
+
+.dashboard ul {
+    list-style-type: none;
+}
+
+.dashboard ul li {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 1vmax 0.5vmax;
+    font-size: 1.2vmax;
+    margin-bottom: 2vmax;
+    border-radius: 5px;
+    font-family: 'gilroy';
+    transition: 0.3s ease-in-out all;
+}
+
+.dashboard ul li:hover {
+    background-color: rgb(21, 8, 57);
+    transform: translateX(5px);
+}
+
+.dashboard ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.job-card {
+    min-height: 90vh;
+    width: inherit;
+}
+
+.job-card .heading {
+    border-bottom: 1px solid white;
+    padding: 0.5vmax 1vmax;
+}
+
+.job-card h1 {
+    font-size: 3vmax;
+    color: white;
+}
+
+.job-card-form-top {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.input-div-1 {
+    width: 15% !important;
+    margin-bottom: 1vmax;
+}
+
+.input-div-1 input {
+    padding: 0.2vmax !important;
+    border-radius: 3px !important;
+}
+
+.input-div-2 {
+    width: 16% !important;
+    margin-bottom: 1vmax;
+}
+
+.input-div-2 input {
+    padding: 0.2vmax !important;
+    border-radius: 3px !important;
+}
+
+.input-div-3 {
+    width: 18% !important;
+    margin-bottom: 1vmax;
+}
+
+.input-div-3 input {
+    padding: 0.2vmax !important;
+    border-radius: 3px !important;
+}
+
+.input-div-4 {
+    width: 10% !important;
+    margin-bottom: 1vmax;
+}
+
+.input-div-4 input {
+    padding: 0.2vmax !important;
+    border-radius: 3px !important;
+}
+
+.input-div-5 {
+    width: 14% !important;
+    margin-bottom: 1vmax;
+}
+
+.input-div-5 input {
+    padding: 0.2vmax !important;
+    border-radius: 3px !important;
+}
+
+.input-div-6 {
+    width: 14% !important;
+    margin-bottom: 1vmax;
+}
+
+.input-div-6 input {
+    padding: 0.2vmax !important;
+    border-radius: 3px !important;
+}
+
+.input-div-7 {
+    width: 17% !important;
+    margin-bottom: 1vmax;
+}
+
+.input-div-7 input {
+    padding: 0.2vmax !important;
+    border-radius: 3px !important;
+}
+
+.input-div-8 {
+    width: 17% !important;
+    margin-bottom: 1vmax;
+}
+
+.input-div-8 input {
+    padding: 0.2vmax !important;
+    border-radius: 3px !important;
+}
+
+.input-div-9 {
+    width: 18% !important;
+    margin-bottom: 1vmax;
+}
+
+.input-div-9 input {
+    padding: 0.2vmax !important;
+    border-radius: 3px !important;
+}
+
+.input-div-10 {
+    width: 16% !important;
+    margin-bottom: 1vmax;
+}
+
+.input-div-10 input {
+    padding: 0.2vmax !important;
+    border-radius: 3px !important;
+}
+
+
+/* textarea */
+
+.job-card-form-bottom {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+#addbox,
+#warea,
+#workDone {
+    resize: none;
+}
+
+/* bill-inputs */
+
+.form-div {
+    padding: 2vmax;
+    width: 99%;
+}
+
+.form-div form {
+    color: white;
+}
+
+.lbl {
+    font-size: 0.9vmax;
+    margin-bottom: 0.2vmax !important;
+}
+
+.hsn-inpt {
+    width: 15% !important;
+}
+
+.hsn-inpt .form-control {
+    padding: 0.170rem 0.75rem !important;
+}
+
+.reqpart {
+    width: 18% !important;
+}
+
+.reqpart .form-control {
+    padding: 0.170rem 0.75rem !important;
+}
+
+.qtn {
+    width: 10% !important;
+}
+
+.qtn .form-control {
+    padding: 0.170rem 0.75rem !important;
+}
+
+.unit {
+    width: 12% !important;
+}
+
+.unit .form-control {
+    padding: 0.170rem 0.75rem !important;
+}
+
+.TAX {
+    width: 10% !important;
+}
+
+.TAX .form-control {
+    padding: 0.170rem 0.75rem !important;
+}
+
+.labour {
+    width: 12% !important;
+}
+
+.labour .form-control {
+    padding: 0.170rem 0.75rem !important;
+}
+
+.total {
+    width: 12% !important;
+}
+
+.total .form-control {
+    padding: 0.170rem 0.75rem !important;
+}
+
+.btn-div {
+    margin-top: 1.6vmax;
+}
+
+.addbtn {
+    margin-top: 1.5vmax;
+}
+
+.addbtn i {
+    color: white;
+    font-size: 2vmax;
+    padding: 1vmax 2vmax;
+}
+
+.addbtn:hover {
+    cursor: pointer;
+}
+
+/* table */
+
+.table-wrapper {
+    padding: 2vmax;
+    width: 95%;
+}
+
+table {
+    width: 100%;
+    background-color: rgb(195, 223, 228);
+    border: 1px solid white;
+    color: black;
+}
+
+.tr {
+    border: 1px solid white;
+}
+
+.th {
+    border: 1px solid white;
+    text-align: center;
+}
+
+.td {
+    border: 1px solid white;
+    text-align: center;
+}
+
+.textsize {
+    font-size: 0.7vmax !important;
+}

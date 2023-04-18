@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="../stylesheets/advisor.css">
+	<link rel="stylesheet" href="../stylesheets/advisor@media.css">
+	<link rel="stylesheet" href="../stylesheets/invoice.css">
+
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="main">
+
+		<!-- nav start  -->
+		<div class="customer_panel_nav">
+			<div class="cpn_left">
+				<img src="../images/MoC.png" alt="">
+				<svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+					<path fill="none" d="M0 0h24v24H0z" />
+					<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
+				</svg>
+			</div>
+			<div class="cpn_right">
+				<button>logout</button>
+				<!-- <svg class="i" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2a9.985 9.985 0 0 1 8 4h-2.71a8 8 0 1 0 .001 12h2.71A9.985 9.985 0 0 1 12 22zm7-6v-3h-8v-2h8V8l5 4-5 4z"/></svg> -->
+			</div>
+		</div>
+		<!-- nav ends -->
+		<div class="box">
+			<div class="box1">
+				<div class="sidebar_inner">
+					<ul>
+						<li>
+							<a href="#">
+								<span class="icon"></span>
+								<span class="text">Administrator</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"><i class="fa fa-link"></i></span>
+								<span class="text">HR Manager</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"><i class="fa fa-eye"></i></span>
+								<span class="text">Accounts Manager</span>
+							</a>
+						</li>
+						<li class="service-manager">
+							<a href="#">
+								<span class="icon"><i class="fa fa-book"></i></span>
+								<span class="text">Service Manager</span>
+							</a>
+						</li>
+						<li class="service-advisor">
+							<a href="#">
+								<span class="icon"><i class="fa fa-question-circle"></i></span>
+								<span class="text">Service Advisor</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"><i class="fa fa-question-circle"></i></span>
+								<span class="text">Bodyshop Manager</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"><i class="fa fa-question-circle"></i></span>
+								<span class="text">Bodyshop Advisor</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"><i class="fa fa-question-circle"></i></span>
+								<span class="text">Customer Relationship <br> Manager</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"><i class="fa fa-question-circle"></i></span>
+								<span class="text">Customer Relationship <br> Executive</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"><i class="fa fa-question-circle"></i></span>
+								<span class="text">Spare Parts Manager</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"><i class="fa fa-question-circle"></i></span>
+								<span class="text">Spare Parts Executive</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"><i class="fa fa-question-circle"></i></span>
+								<span class="text">Floor Supervisor</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="advisor">
+				<div class="advisor-top">
+					<h1>Vehicle Job Card</h1>
+				</div>
+
+				<div class="advisor-middle">
+					<form action="">
+						<div class="jobcard1">
+
+
+							<div class="job_no">
+								<label for="JobNo">Job No</label> <br>
+								<input id="jobCardNo" type="number" placeholder="******" name="jobnumber">
+							</div>
+
+							<div class="job_date">
+								<label for="JobDate">Job Date</label> <br>
+								<input id="jobCardDate" type="date" placeholder="20/03/23" name="date">
+							</div>
+
+							<div class="vehicle-rc">
+								<label for="Vehicle-rc">Vehicle Registration No</label> <br>
+								<input id="jobCardRegNo" type="number" placeholder="**********" name="vehicleRc">
+							</div>
+
+							<div class="kilometer">
+								<label for="km">Kilometer</label> <br>
+								<input id="jobCardKM" type="number" placeholder="**********" name="kilometer">
+							</div>
+
+							<div class="timeIn">
+								<label for="Timein">TimeIN</label> <br>
+								<input id="jobCardTime" type="time" name="timeIn">
+							</div>
+
+							<div class="timeOut">
+								<label for="Timein">TimeOut</label> <br>
+								<input type="time" name="timeOut">
+							</div>
+						</div>
+
+						<div class="jobcard2">
+
+
+							<div class="company_name">
+								<label for="company-name">Vehicle Make</label> <br>
+								<input id="jobCardVehicleMake" type="text" placeholder="Vehicle Make"
+									name="company_name">
+							</div>
+
+							<div class="company_model">
+								<label for="company-model">Model</label> <br>
+								<input id="jobCardVehicleModel" type="text" placeholder="Model" name="model">
+							</div>
+
+
+							<div class="customer_name">
+								<label for="customer_name">Customer Name</label> <br>
+								<input id="jobCardCustomerName" type="text" placeholder="Customer Name"
+									name="customer_name">
+							</div>
+
+
+							<div class="contact_no">
+								<label for="contact_no">Contact No</label> <br>
+								<input id="jobCardCustomerContact" type="number" placeholder="Contact no"
+									name="contact_no">
+							</div>
+						</div>
+
+						<div class="jobcard3">
+
+							<div class="address">
+								<label for="address">Address</label> <br>
+								<textarea id="jobCardCustomerAddress" placeholder="Address" name="address"></textarea>
+							</div>
+							<div class="address">
+								<label for="address">Work Required</label> <br>
+								<textarea i placeholder="Work Required" name="address"></textarea>
+							</div>
+							<div class="address">
+								<label for="contact_no">Work Done</label> <br>
+								<textarea  placeholder="Work Done" name="address"></textarea>
+							</div>
+
+
+
+						</div>
+
+
+						<div class="part">
+
+<!-- 
+							<div class="parts-req">
+								<label for="part">Required Part</label> <br>
+								<input type="text" id="req-parts" placeholder="Required Part" name="part">
+							</div>
+
+							<div class="qty">
+								<label for="qty">Quantity</label> <br>
+								<input type="number" id="qty" placeholder="Quantity" name="qty">
+							</div>
+							<i class="ri-add-fill" id="plus"></i>
+
+
+							<div id="listcard" class="card list-group  ">
+								<li></li>
+							</div> -->
+
+					
+						<!-- <br>
+
+						<div class="jobpart3">
+							<div class="price">
+								<label for="price">Unit Price</label> <br>
+								<input id="jobCardUnitPrice" type="number" id="unitprice" placeholder="Unit Price"
+									name="price">
+							</div>
+
+							<div class="labour">
+								<label for="labour">Labour Charge</label> <br>
+								<input id="jobCardLabourCharge" type="number" id="labourcharge"
+									placeholder="Labour Charge" name="charge">
+							</div>
+
+							<div class="sub-total">
+								<label for="sub-total">Sub Total</label> <br>
+								<input type="number" id="subtotal" placeholder="Sub Total" name="sub_total">
+							</div>
+
+							<div class="total">
+								<label for="total">Total</label> <br>
+								<input type="number" id="total" placeholder="Total" name="total">
+							</div>
+						</div>
+						<div class="jobpart4">
+
+
+							<div class="tax">
+								<label for="tax">Tax</label> <br>
+								<select class="form-control" name="tax" id="jobCardTaxes">
+									<option value="">5%</option>
+									<option value="">10%</option>
+								</select>
+
+							</div>
+
+
+
+							<div class="tech_name">
+								<label for="tech_name">Technician Name</label> <br>
+								<input type="text" placeholder="Technician Name" name="technician_name">
+							</div>
+
+							<button id="jobCardButton" type="button">Submit</button> -->
+
+
+           
+
+
+
+
+							
+					
+								
+			<table id="tble" class="table table-bordered">
+
+				<thead>
+					<tr>
+						<th scope="col">SrNo</th>
+						<th scope="col">HSN/SAC</th>
+						<th scope="col">REQ Part</th>
+						<th scope="col">Quantity</th>
+						<th scope="col">UNit Price</th>
+						<th scope="col">Tax</th>
+						<th scope="col">Labour</th>
+						<th scope="col">SubTotal</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>@mdo</td>
+						<td>@mdo</td>
+						<td>@mdo</td>
+						<td>@mdo</td>
+					</tr>
+				</tbody>
+			
+			</table>
+			<button>Add</button>	  
+							  
+
+
+
+
+
+
+
+
+
+
+						</div>
+					</form>
+
+
+
+
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- service advisor ends  -->
+		<div class="overlay1">
+
+			<div class="cross1">
+				<h1 class="cross2">❌</h1>
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li class="">
+						<a href="#">
+							<span class="icon"></span>
+							<span class="text">Administrator</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class="fa fa-link"></i></span>
+							<span class="text">HR Manager</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class="fa fa-eye"></i></span>
+							<span class="text">Accounts Manager</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class="fa fa-book"></i></span>
+							<span class="text">Service Manager</span>
+						</a>
+					</li>
+					<li class="service-advisor">
+						<a href="#">
+							<span class="icon"><i class="fa fa-question-circle"></i></span>
+							<span class="text">Service Advisor</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class="fa fa-question-circle"></i></span>
+							<span class="text">Bodyshop Manager</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class="fa fa-question-circle"></i></span>
+							<span class="text">Bodyshop Advisor</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class="fa fa-question-circle"></i></span>
+							<span class="text">Customer Relationship <br> Manager</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class="fa fa-question-circle"></i></span>
+							<span class="text">Customer Relationship <br> Executive</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class="fa fa-question-circle"></i></span>
+							<span class="text">Spare Parts Manager</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class="fa fa-question-circle"></i></span>
+							<span class="text">Spare Parts Executive</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class="fa fa-question-circle"></i></span>
+							<span class="text">Floor Supervisor</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+		
+			<div class="invoice">
+				<div class="preInvoice_desc">
+					<p class="cross4">❌</p>
+
+					<!-- preinvoice start -->
+					<div class="pre_invoice">
+						<h3>Pre-Invoice</h3>
+					</div>
+					<!-- top start -->
+					<div class="top">
+						<div class="top1">
+							<h1>JOB NO- <p>1656132</p>
+							</h1>
+						</div>
+
+						<div class="top2">
+							<p>27/07/2023</p>
+							<h3>12.00</h3>
+						</div>
+
+					</div>
+<!-- middle start -->
+					<div class="middle">
+
+						<h1>Bill To:-</h1>
+						<h2>Customer Name</h2>
+						<h3>Customer Number</h3>
+						<p>Customer Address</p>
+					</div>
+<!-- desc start -->
+					<div class="desc">
+						<div class="desc1">
+							<h1>Vehicle Make</h1>
+							<p>BMW</p>
+						</div>
+						<div class="desc2">
+							<h1>Vehicle Model</h1>
+							<p>BMW</p>
+						</div>
+						<div class="desc3">
+							<h1>RegNo :- </h1>
+							<p>B165645174</p>
+						</div>
+						<div class="desc4">
+							<h1>KM </h1>
+							<p>B165645174</p>
+						</div>
+					</div>
+					<hr>
+					<!-- parts start -->
+					<div class="parts">
+
+						<div class="parts-description">
+							<h1>Parts-Description</h1>
+
+							<table class="table table-bordered">
+
+								<thead>
+									<tr>
+										<th scope="col">SrNo</th>
+										<th scope="col">Parts-Installed</th>
+										<th scope="col">Qty</th>
+										<th scope="col">Amount</th>
+										<th scope="col">Labour</th>
+										<th scope="col">Total</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+										<td>@mdo</td>
+										<td>@mdo</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+						<div class="costs">
+							<h1>Labour-Cost <p>1245</p>
+							</h1>
+							<h2>Material-Cost <p>1245</p>
+							</h2>
+							<h3>Sub-Total:- <p>2490</p>
+							</h3>
+						</div>
+						<hr>
+						<div class="taxes">
+							<h1>GST:- <p>115</p>
+							</h1>
+							<h2>CGST:- <p>lo115</p>
+							</h2>
+							<h3>Total :- <p>452</p>
+							</h3>
+						</div>
+						<hr>
+						<div class="last">
+							<img src="../images/MoC.png" alt="">
+							<div class="bill">
+								<input style="margin: .5vw;" type="number" placeholder="Discount"> <br>
+								<button id="preInvoiceButton" type="button">Print-Invoice</button>
+							</div>
+
+
+						</div>
+
+					</div>
+   <!-- parts end -->
+
+				</div>
+<!-- preinvoice end  -->
+
+<div class="mainInvoice_desc">
+
+	<!-- preinvoice start -->
+	<div class="pre_invoice">
+		<h3>Main-Invoice</h3>
+	</div>
+	<!-- top start -->
+	<div class="top">
+		<div class="top1">
+			<h1>JOB NO- <p>1656132</p>
+			</h1>
+		</div>
+
+		<div class="top2">
+			<p>27/07/2023</p>
+			<h3>12.00</h3>
+		</div>
+
+	</div>
+<!-- middle start -->
+	<div class="middle">
+
+		<h1>Bill To:-</h1>
+		<h2>Customer Name</h2>
+		<h3>Customer Number</h3>
+		<p>Customer Address</p>
+	</div>
+<!-- desc start -->
+	<div class="desc">
+		<div class="desc1">
+			<h1>Vehicle Make</h1>
+			<p>BMW</p>
+		</div>
+		<div class="desc2">
+			<h1>Vehicle Model</h1>
+			<p>BMW</p>
+		</div>
+		<div class="desc3">
+			<h1>RegNo :- </h1>
+			<p>B165645174</p>
+		</div>
+		<div class="desc4">
+			<h1>KM </h1>
+			<p>B165645174</p>
+		</div>
+	</div>
+	<hr>
+	<!-- parts start -->
+	<div class="parts">
+
+		<div class="parts-description">
+			<h1>Parts-Description</h1>
+
+			<table class="table table-bordered">
+
+				<thead>
+					<tr>
+						<th scope="col">SrNo</th>
+						<th scope="col">Parts-Installed</th>
+						<th scope="col">Qty</th>
+						<th scope="col">Amount</th>
+						<th scope="col">Labour</th>
+						<th scope="col">Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>@mdo</td>
+						<td>@mdo</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+		<div class="costs">
+			<h1>Labour-Cost <p>1245</p>
+			</h1>
+			<h2>Material-Cost <p>1245</p>
+			</h2>
+			<h3>Sub-Total:- <p>2490</p>
+			</h3>
+		</div>
+		<hr>
+		<div class="taxes">
+			<h1>GST:- <p>115</p>
+			</h1>
+			<h2>CGST:- <p>115</p>
+			</h2>
+			<h3>Total :- <p>452</p>
+			</h3>
+		</div>
+		<hr>
+		<div class="last">
+			<img src="../images/MoC.png" alt="">
+			<div class="bill">
+				<button id="preInvoiceButton" type="button">Print-Invoice</button>
+			</div>
+
+
+		</div>
+
+	</div>
+<!-- parts end -->
+
+</div>
+	
+		</div>
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<script src="../javascripts/serviceAdvisor@script.js"></script>
+</body>
+
+</html>

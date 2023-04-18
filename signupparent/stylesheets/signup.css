@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+:root {
+    --blue: #004aad;
+    --red: #fa1617;
+    --white: #ffffff;
+    --sky: #e7eceb;
+    --black: #000000;
+    --deepblue: #000641;
+  }
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body {
+    width: 100%;
+    min-height: 100vh;
+
+}
+.login-container{
+    width: 100%;
+    min-height: 100vh;
+background-color: rgba(0, 0, 0, 0.747);
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.container1 {
+    width: 30vw;
+    height: 65vh;
+    background-color:  rgba(142, 238, 227, 0.514);
+    border-radius: 20px;
+    border: 5px solid rgb(198, 198, 198);
+  
+}
+.img-slider,.img-slider1{
+    width: 30vw;
+    height: 10vh;
+}
+.img-slider h4{
+    margin-left: 32vmax;
+    margin-top: 1.5vh;
+    cursor: pointer;
+    font-size: 1.5vh;
+}
+.img-slider1 h4{
+    margin-left: 27vmax;
+    margin-top: 1.5vh;
+    cursor: pointer;
+    font-size: 1.5vh;
+}
+.img-slider h2{
+    text-align: center;    
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.8rem;
+    margin-left: 4vw;
+}
+.img-slider1 h2{
+    text-align: center;    
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.7rem;
+    margin-top: 1vh;
+}
+
+.content1{
+ width: 30vw;
+ height: 90vh;
+}
+.content1 > h3 {
+    text-align: center;
+    font-size : 3vh;
+    font-family: 'Lexend', sans-serif;
+    margin-top: 1.5vh;
+    /* margin-left: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content1 h3 img{
+    margin-left: 1vw;
+}
+.content1 #form input {
+    border:none;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px 0px;  
+    font-family: 'Comfortaa', cursive;
+    font-weight: 800;  
+    margin-left: 0px;
+}
+.content1>h5{
+    font: 400 .8vmax "gilroy";
+    margin-bottom: 7vh;
+    color:white;
+    text-align: center;
+
+      }
+.content1>h5>a{
+    font: 400 .8vmax "gilroy";
+    color: white;
+    text-decoration: underline;
+      }
+
+
+.content1 p {
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.5vh;
+    color: white;
+    margin-top: 1vh;
+}
+.content1 p  a {
+    text-decoration: none;
+    color:#1f6cab;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.container2 {
+    width: 35vw;
+    height: 75vh;
+    background-color:  rgba(142, 238, 227, 0.514);
+    border-radius: 20px;
+    border: 5px solid rgb(198, 198, 198);
+  
+}
+.content{
+    width: 35vw;
+    height: 90vh;
+   }
+   .content > h2 {
+       text-align: center;
+       font-size : 1.5vw;
+       font-family: 'Lexend', sans-serif;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   .content1 h3 img{
+       margin-left: 1vw;
+   }
+   .content #form input {
+       border:none;
+       outline: none;
+       font-size: 1rem;
+       padding: .5vh 0px;  
+       font-family: 'Comfortaa', cursive;
+       font-weight: 800;  
+       margin-left: 0px;
+   }
+   .content>h5{
+       font: 400 .8vmax "gilroy";
+       margin-bottom: 7vh;
+       color: grey;
+       text-align: center;
+   
+         }
+   .content>h5>a{
+       font: 400 .8vmax "gilroy";
+       color: grey;
+       text-decoration: underline;
+         }
+   
+   
+   .content p {
+       text-align: center;
+       font-family: 'Lexend', sans-serif;
+       font-size: 1.5vh;
+       color: white;
+       margin-top: 1vh;
+   }
+   .content p  a {
+       text-decoration: none;
+       color:#1f6cab;
+       font-weight: bolder;
+       font-size: 1.1rem;
+       border: none;
+   }
+   
+
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+    .login-container{
+        width: 100%;
+        min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.747);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    }
+    .container1 {
+        width: 90vw;
+        height: 55vh;
+        background-color:  rgba(142, 238, 227, 0.514);
+        border-radius: 20px;
+        border: 5px solid rgb(198, 198, 198);
+      
+    }
+    .img-slider,.img-slider1{
+        width: 85vw;
+        height: 10vh;
+        
+    }
+    .img-slider h4{
+        margin-left: 85vw;
+        margin-top: 1.5vh;
+        cursor: pointer;
+        font-size: 1.5vh;
+    }
+    .img-slider1 h4{
+        margin-left: 83vw;
+        margin-top: 1.5vh;
+        cursor: pointer;
+        font-size: 1.5vh;
+    }
+    .img-slider h2{
+        text-align: center;    
+        font-family: 'Lobster Two', cursive;
+        font-size: 1.4rem;
+        margin-top: 1.5vh;
+        margin-left: 10vw;
+    }
+    .img-slider1 h2{
+        text-align: center;    
+        font-family: 'Lobster Two', cursive;
+        font-size: 1.5rem;
+        margin-top: 1.5vh;
+    }
+    
+    .content1{
+     width: 90vw;
+     height: 90vh;
+
+    }
+    .content1 > h3 {
+        text-align: center;
+        font-size : 2vh;
+        font-family: 'Lexend', sans-serif;
+        margin-top: 0vh;
+        /* margin-left: 100px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content1 h3 img{
+        margin-left: 1vw;
+    }
+    .content1 #form input {
+        border:none;
+        outline: none;
+        font-size: 1rem;
+        padding: 5px 0px;  
+        font-family: 'Comfortaa', cursive;
+        font-weight: 800;  
+        margin-left: 0px;
+    }
+    .content1>h5{
+        font: 400 1vmax "gilroy";
+        margin-bottom: 7vh;
+        color:white;
+        text-align: center;
+    
+          }
+    .content1>h5>a{
+        font: 400 1vmax "gilroy";
+        color: white;
+        text-decoration: underline;
+          }
+    
+    
+    .content1 p {
+        text-align: center;
+        font-family: 'Lexend', sans-serif;
+        font-size: 2vh;
+        color: white;
+        margin-top: 1vh;
+    }
+    .content1 p  a {
+        text-decoration: none;
+        color:#1f6cab;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        border: none;
+    }
+    
+    .container2 {
+        width: 95vw;
+        height: 70vh;
+        background-color:  rgba(142, 238, 227, 0.514);
+        border-radius: 20px;
+        border: 5px solid rgb(198, 198, 198);
+      
+    }
+    .content{
+        width: 85vw;
+        height: 90vh;
+       }
+       .content > h2 {
+           text-align: center;
+           font-size : 4.5vw;
+           font-family: 'Lexend', sans-serif;
+           margin-top: 0vh;
+           /* margin-left: 100px; */
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       .content1 h3 img{
+           margin-left: 1vw;
+       }
+       .content #form input {
+           border:none;
+           outline: none;
+           font-size: 1rem;
+           padding: .5vh 0px;  
+           font-family: 'Comfortaa', cursive;
+           font-weight: 800;  
+           margin-left: 0px;
+       }
+       .content>h5{
+           font: 400 .8vmax "gilroy";
+           margin-bottom: 7vh;
+           color: grey;
+           text-align: center;
+       
+             }
+       .content>h5>a{
+           font: 400 .8vmax "gilroy";
+           color: grey;
+           text-decoration: underline;
+             }
+       
+       
+       .content p {
+           text-align: center;
+           font-family: 'Lexend', sans-serif;
+           font-size: 1.5vh;
+           color: white;
+           margin-top: 1vh;
+       }
+       .content p  a {
+           text-decoration: none;
+           color:#1f6cab;
+           font-weight: bolder;
+           font-size: 1.1rem;
+           border: none;
+       }
+        
+}
